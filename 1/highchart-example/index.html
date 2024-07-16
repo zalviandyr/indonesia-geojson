@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      #container {
+        height: 500px;
+        min-width: 310px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .loading {
+        margin-top: 10em;
+        text-align: center;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container justify-content-center my-5">
+      <!-- Start data dropdown-->
+      <div class="form-group">
+        <select name="data" id="data-option" class="form-control">
+          <option value="provinces/aceh">Aceh</option>
+          <option value="provinces/jawa_tengah">Jawa Tengah</option>
+          <option value="provinces/banten">Banten</option>
+          <option value="provinces/bengkulu">Bengkulu</option>
+          <option value="provinces/gorontalo">Gorontalo</option>
+          <option value="provinces/bali">Bali</option>
+          <option value="provinces/bangka_belitung">Bangka-Belitung</option>
+          <option value="provinces/papua_barat">Papua Barat</option>
+          <option value="provinces/jakarta_raya">Jakarta Raya</option>
+          <option value="provinces/jambi">Jambi</option>
+          <option value="provinces/jawa_barat">Jawa Barat</option>
+          <option value="provinces/jawa_timur">Jawa Timur</option>
+          <option value="provinces/kalimantan_barat">Kalimantan Barat</option>
+          <option value="provinces/kalimantan_selatan">
+            Kalimantan Selatan
+          </option>
+          <option value="provinces/kalimantan_tengah">Kalimantan Tengah</option>
+          <option value="provinces/kalimantan_timur">Kalimantan Timur</option>
+          <option value="provinces/kepulauan_riau">Kepulauan Riau</option>
+          <option value="provinces/lampung">Lampung</option>
+          <option value="provinces/maluku">Maluku</option>
+          <option value="provinces/maluku_utara">Maluku Utara</option>
+          <option value="provinces/nusa_tenggara_barat">
+            Nusa Tenggara Barat
+          </option>
+          <option value="provinces/nusa_tenggara_timur">
+            Nusa Tenggara Timur
+          </option>
+          <option value="provinces/papua">Papua</option>
+          <option value="provinces/riau">Riau</option>
+          <option value="provinces/sulawesi_barat">Sulawesi Barat</option>
+          <option value="provinces/sulawesi_selatan">Sulawesi Selatan</option>
+          <option value="provinces/sulawesi_tengah">Sulawesi Tengah</option>
+          <option value="provinces/sulawesi_tenggara">Sulawesi Tenggara</option>
+          <option value="provinces/sulawesi_utara">Sulawesi Utara</option>
+          <option value="provinces/sumatera_barat">Sumatera Barat</option>
+          <option value="provinces/sumatera_selatan">Sumatera Selatan</option>
+          <option value="provinces/sumatera_utara">Sumatera Utara</option>
+          <option value="provinces/yogyakarta">Yogyakarta</option>
+        </select>
+      </div>
+      <!-- End data dropdown-->
+    </div>
+    <!-- Start map component-->
+    <div id="container"></div>
+    <!-- End map component-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
